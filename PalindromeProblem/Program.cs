@@ -16,6 +16,7 @@ namespace PalindromeProblem
                 new {str = "", result = true},
                 new {str = "a", result = true},
                 new {str = ",", result = true},
+                new {str = "mam is not'ton! Si Mam?", result = true},
                 new {str = "a,", result = true},
                 new {str = ",a", result = true},
                 new {str = "a,a", result = true},

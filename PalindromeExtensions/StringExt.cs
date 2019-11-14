@@ -9,9 +9,7 @@ public static class StringExt
     public static bool IsPalindrome(this string input)
     {
         var letterCount = input.Count(x => x.IsLetter());
-
         if (letterCount == 0 || letterCount == 1) return true;
-
         var leftIndex = 0;
         var rightIndex = input.Count() - 1;
 
@@ -21,12 +19,10 @@ public static class StringExt
             {
                 leftIndex++;
             }
-
             while (rightIndex > InvalidIndex && !input[rightIndex].IsLetter())
             {
                 rightIndex--;
             }
-
             if (leftIndex != input.Count() && rightIndex != InvalidIndex)
             {
                 if (input[rightIndex].ToLower() != input[leftIndex].ToLower())
